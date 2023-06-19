@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(Imagens/fundo.png) repeat-x;
+}
+
+#conteiner {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#topo {
+    height: 150px;
+    background: url(Imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo {
+    width: 150px;
+    height: 66px;
+    background: url(Imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+/*      BARRA DE NAVEGAÇÃO TOPO      */
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(Imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#Brasil,
+body.internacional #navegacao a#Internacional,
+body.economia #navegacao a#Economia,
+body.saude #navegacao a#Saude,
+body.ciencia #navegacao a#Ciencia,
+body.fotos #navegacao a#Fotos {
+    color: #fff;
+    cursor: text;
+}
+
+/* Conteúdo */
+
+#conteudo {
+    width: 800px;
+    margin-top: 60px;
+    margin-inline: auto;
+    border: 1px solid red;
+}
+
+#lateral {
+    width: 190px;
+    margin: 0px 0px 20px -800px;
+    float: left;
+}
+
+#uma-colunas #primario {
+    width: 800px;
+    float: left;
+    margin: 0px 0px 20px 0px; /*Podemos usar margin para deslocar o flot de uma lado para oo outro*/
+}
+
+#duas-colunas #primario {
+    width: 595px;
+    float: left;
+    margin: 0px 0px 20px 205px; /*Podemos usar margin para deslocar o flot de uma lado para oo outro*/
+}
+
+#tres-colunas #primario {
+    width: 290px;
+    float: left;
+    margin: 0px 0px 20px 205px; /*Podemos usar margin para deslocar o flot de uma lado para oo outro*/
+}
+
+#secundario {
+    width: 290px;
+    margin: 0px 0px 20px 15px;
+    float: left;
+}
+
+/* CAIXA */
+
+.caixa {
+    background: #f3f3f3 url(Imagens/fundo-caixa.png);
+    margin: 10px 0;
+    padding: 5px;
+}
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+/* BARRA LATERAL */
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(Imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    font-size: 0.9em;
+    padding: 5px;
+    width: 145px;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    margin-top: 5px;
+}
+
+/*  Área de conteudo  */
+
+img {
+    border: 2px solid #dfdfdf;
+}
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+    color: #fff;
+}
+/*  Lista de noticias  */
+
+#lista-noticias li {
+    padding-left: 2px;
+    height: 68px;
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+    float: left;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+#lista-noticias li a h3 {
+    padding: 1px;
+    margin: 0px 0px 10px 0px;
+    background: none;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a h3:hover {
+    padding: 1px;
+    margin: 0px 0px 10px 0px;
+    background: #eee;
+    color: #3e7ab9;
+    cursor: pointer;
+}
+
+#lista-noticias li a p {
+    font-size: 0.8em;
+    margin: 0px 0px 10px 0px;
+}
+
+
+/*  RODAPÉ  */
+
+.clean {
+    clear: both;
+    margin-inline: auto;
+    text-align: center;
+    background: #294c71;
+    padding: 20px;
+    color: #fff;
+}

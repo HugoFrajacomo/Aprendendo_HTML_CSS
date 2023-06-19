@@ -1,0 +1,16 @@
+.conteudo {
+    background: rgb(143, 143, 202);
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left; /* Comando para colocar as divições uma do lado da outra*/
+}
+.clear {
+    clear: both; /*Este comando serve para objetos/textos entre outros conteudos que venham depois do comando float fiquem na posição normal abaixo do conteudos flutuantes*/
+}
+#principal {
+    border: 5px solid red;
+    background: green;
+}
+

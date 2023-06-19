@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estilo de textos</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            body {
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .negrito {
+                font-weight: bold; /*Nesse tópico podemos definir como "bold", "normal", 100 até 900 (intensidade do negrito)*/
+            }
+            .italico {
+                font-style: italic; /*Font style tbm serve para deixar em itálico, entre outros.*/
+            }
+            .formatacao {
+                /*text-decoration: underline;*/       /*abaixo do texto*/
+                /*text-decoration: overline;*/        /*Linha acima do texto*/
+                text-decoration: line-through;        /*Linha no meio do texto*/
+            }
+            .texto {
+                font: bold 40px; /*colocando apenas fonte podemos configorar todas as variantes em uma única linha. Segue observações abaixo.*/
+            }
+
+        </style>
+        <!--COMENTÁRIOS
+        font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+        -->
+    </head>
+    <body>
+        <P class="negrito">Texto negrito</P>
+        <P class="italico">Texto Itálico</P>
+        <P class="formatacao">Texto normal</P>
+        <P class="texto">Texto normal</P>
+        <P>Texto normal</P>
+        
+
+
+
+
+
+
+    </body>
+</html>

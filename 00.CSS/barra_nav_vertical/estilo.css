@@ -1,0 +1,36 @@
+/* BARRA DE NAVEGAÇÃO VERTICAL*/
+ul.atividade {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.atividade {
+    padding: 5px 20px;
+    background: url(arquivos/seta.png) no-repeat left center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #00;
+    text-indent: 40px; /* Deslocar o texto */
+    line-height: 40px; /* Tamanho da altura da font (espaço em branco acima e abaixo da letra*/
+    text-decoration: none;
+    background: #f7b600 url(arquivos/menu.png) no-repeat right bottom;
+}
+
+a:hover, .selecionado a { /* A classe "selecionado" será utilizada para deixar marcado a pagina que estiver selecionada*/
+    background-position: left bottom;
+    color: white;
+}
+
+/* Quando definimos "a hover" usamos o background-position para direcionar a imagem para área de outra cor. visto que a imagem tem 2 vezes o tamanho do botão sendo que sua metade está com uma cor e a outra metade com outra */

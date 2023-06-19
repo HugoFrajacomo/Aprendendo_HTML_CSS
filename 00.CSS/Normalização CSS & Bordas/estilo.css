@@ -1,0 +1,24 @@
+article {
+    background: peru;
+}
+
+header {
+    border: 1px solid red;
+}
+
+nav {
+    border: 5px solid blue;
+}
+
+footer {
+    background: gray;
+}
+
+section {
+    border: 5px dotted white;
+    margin: 5px;
+}
+
+aside {
+    background: palevioletred;
+}

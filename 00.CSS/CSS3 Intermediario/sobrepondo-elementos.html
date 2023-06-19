@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sobrepondo Elemntos</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            .conteudo1 {
+                border: 1px solid red;
+                background: orange;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                z-index: 2; /* Este comando cria uma ierarquia de posição na sobrepocição. Qunto maior o número mais a frente ele está dos outros elementos abaixo dele*/
+            }
+            .conteudo2 {
+                border: 1px solid red;
+                background: rgb(9, 175, 134);
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 80px;
+                left: 80px;
+                z-index: 1;
+            }
+            .conteudo3 {
+                border: 1px solid red;
+                background: rgb(49, 14, 177);
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 160px;
+                left: 160px;
+                z-index: 0;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="conteudo1">
+            conteudo 1
+        </div>
+        <div class="conteudo2">
+            conteudo 2
+        </div>
+        <div class="conteudo3">
+            conteudo 2
+        </div>
+    </body>
+</html>

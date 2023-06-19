@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Ancient-Medium";
+    scr: url(Fontes/Ancient-Medium.woff)
+}
+
+@font-face {
+    font-family: "BringHeart";
+    scr: url(Fontes/BringHeart.woff)
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 6em;
+    font-family: "Ancient-Medium";
+}
+
+p {
+    font-size: 6em;
+    font-family: "BringHeart";
+}

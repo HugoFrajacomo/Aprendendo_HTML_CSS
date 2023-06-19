@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tamanho de textos</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            .textos {
+                /*
+                px -> tamanho fixo | tamanho padrão 16px
+                % -> relativo ao tamanho. Ex: 100% referece ao tamanho padrão (Equivalente a 16 px)
+                em -> relativo ao tamanho do conteiner. (Mais utilizados para definir tamanhos relativos)
+                */
+                font-size: 2em;
+            }
+            .texto2 {
+                font-size: 16px;
+            }
+            .texto3 {
+                font-size: 1em;
+            }
+            div {
+                font-size: 30px;
+            }
+
+        </style>
+        
+        <!--OBSERVAÇÕES
+            Nota-se que "1 em" de tamanho equivale ao tamanho padrão do conteiner como foi definido 60px no conteiner ele seguirá este tamanho
+        -->
+    </head>
+
+    <body>
+        
+        <div>
+            <p class="textos">Conteúdo 1</p> <!--Textos está formatado para 2em, logo ele sempre será 2x maior do que foi definido no conteriner pai-->
+            <p class="texto2">Conteúdo 2</p> <!--Neste caso foi definito na classe texto2 um tamanho fixo de 15 pix, logo ele não varia de acordo com conteiner-->
+            <p class="texto3">Conteúdo 3</p> <!--A formatação para texto 3 será sempre igual ao conteiner pai, visto que seu valor é de 1 em-->
+        </div>
+
+    </body>
+</html>

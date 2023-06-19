@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cor e imagem de fundo</title>
+        <meta charset="utf-8">
+
+        <style>
+
+            
+            body {
+                background-color: bisque;
+                background-image: url('recursos/yoshi.png');
+                background-repeat: no-repeat; /*Não repte a imagem.*/ 
+                background-attachment: scroll; /*Fixa a imagem no plano de fundo. Se rolar ela acompanha na mesma posição.*/ 
+                background-position: center center;  /*Define a posição da imagem (primeiro valor é o eixo X e o segundo o eixo Y).*/
+            }
+            
+            .fundo {
+                background-color: cornflowerblue;
+                color: white; /*color sozinho muda cor da fonte*/
+            }
+        
+
+        </style>
+            <!--OBSERVAÇÕES
+            Em background-position podemos utilizar:
+            Primeiro valor: left, center, right
+            Segundo Valor: top, center, bottom
+
+            Poderia definir todas as funções utilizando apenas o comando "background"
+            Ordem dos parâmetros:
+            1º Cor de fundo
+            2º Imagem de fundo
+            3º repetição
+            4º attachment
+            5º Posição
+
+            ficaria desta forma:
+            background: blue url() no-repeat scroll center top ;          
+            
+            -->
+    </head>
+    <body>
+        <h1 class="fundo">Título 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin, arcu sed porttitor consequat, massa libero dignissim leo, eu vehicula metus dui et justo. Suspendisse sed euismod sapien, sit amet commodo nibh. Praesent mollis turpis quis laoreet auctor. Sed vitae neque at mauris vulputate sagittis sit amet at urna. Cras placerat dui sed nibh dignissim vehicula. Suspendisse vel neque scelerisque, dapibus lorem id, ornare turpis. Cras sem neque, scelerisque eu lobortis vitae, tempus a ex. In placerat elit a nibh laoreet condimentum. Sed vulputate, nibh sit amet commodo dapibus, sem orci finibus elit, quis blandit nibh massa et nunc. Donec porttitor, libero vehicula tristique tincidunt, libero massa molestie lacus, quis porta metus lectus tristique quam. Nunc nec nunc est. Proin nulla felis, tempor nec interdum sit amet, condimentum sed ligula. Sed vestibulum, lorem feugiat molestie gravida, magna eros commodo elit, sed luctus nibh sem eget arcu.
+        </p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>
+            Quisque ut massa a felis lobortis fermentum eu nec augue. Nunc urna velit, rhoncus sed nunc eu, elementum lobortis nunc. Vivamus eget dui sit amet lacus tristique condimentum sed id lorem. Aliquam tincidunt justo sed mauris facilisis sodales. Duis in ex malesuada, faucibus nulla sit amet, sagittis sem. Nam varius velit sapien, eu iaculis turpis vulputate quis. Pellentesque tincidunt vel orci ut lobortis. Cras vel pretium lectus. Ut metus arcu, tempus eget augue sit amet, dapibus tincidunt ante. Suspendisse semper quam ut lacus malesuada, ut rhoncus sapien tempus. 
+        </p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>
+            Quisque ut massa a felis lobortis fermentum eu nec augue. Nunc urna velit, rhoncus sed nunc eu, elementum lobortis nunc. Vivamus eget dui sit amet lacus tristique condimentum sed id lorem. Aliquam tincidunt justo sed mauris facilisis sodales. Duis in ex malesuada, faucibus nulla sit amet, sagittis sem. Nam varius velit sapien, eu iaculis turpis vulputate quis. Pellentesque tincidunt vel orci ut lobortis. Cras vel pretium lectus. Ut metus arcu, tempus eget augue sit amet, dapibus tincidunt ante. Suspendisse semper quam ut lacus malesuada, ut rhoncus sapien tempus. 
+        </p>
+    </body>
+</html>

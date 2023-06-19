@@ -1,0 +1,11 @@
+header {
+    border: 1px solid red;
+}
+
+nav {
+    text-decoration: none;
+}
+
+footer {
+    background: gray;
+}

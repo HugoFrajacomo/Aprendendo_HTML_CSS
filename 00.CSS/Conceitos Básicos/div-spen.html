@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Div e spen</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+
+            #topo{
+                background: blue;
+            }
+            #conteudo{
+                background: red;
+            }
+            #rodape {
+                background: green;
+            }
+            #assinatura {
+                background: pink;
+            }
+            .produto {
+                background: gray;
+                padding: 10px; 
+                margin: 10px;
+            }
+         
+
+        </style>
+                <!--OBSERVAÇÕES DO HEAD-->
+                <!--Comando "padding" da espaçamento entre uma linha e outra. Já o comando "margin" define ... -->
+    </head>
+
+    <body> 
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div id="topo"> <!--Comando "div" é utilizado para dividir o site em partes. Por exemplo posso utilizar uma diva para trabalhar apenas a barra de navegação do site-->
+
+            <img src="Recursos/amazon.png" width="200">
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+
+
+        </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div id="conteudo"><!--Separação destinada aos produtos-->
+
+            <div class="produto">
+
+                Produto 1
+
+            </div>
+            <div class="produto">
+
+                Produto 2
+
+            </div>
+            <div class="produto"S>
+
+                Produto 2
+
+            </div>
+
+        </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div id="rodape">
+            Todos os direitos reservados
+        </div>
+
+        <span id="assinatura"> <!--Diferentemente da div o span aplica a formatação css direto no html. Ele agrupa os elementos linha a linha-->
+            Hugo 
+        </span>
+        <span> <!--Diferentemente da div o span aplica a formatação css direto no html. Ele agrupa os elementos linha a linha-->
+            Frajacomo
+        </span>
+
+        
+    </body>
+
+</html>

@@ -1,0 +1,3 @@
+Para utilizar fontes no site temos que transformar as fontes no formato .woff
+
+procure no google converter otf para woff

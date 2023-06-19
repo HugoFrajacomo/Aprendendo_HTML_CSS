@@ -1,0 +1,59 @@
+#conteudo {
+    background: #dcdcdc;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#conteudo2 {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+    /*
+    flex-direction:
+    - row -> Direita para esquerda
+    - row-reverse -> Esquerda para direita
+    - column -> de cima para baixo
+    - column-reverse  -> de baixo para cima
+
+    Flex-wrap:   
+    - nowrap     -> conteiner não se adapta ao espaço delimitado, alterando seu tamanho original
+    - wrap       -> passa o conteiner para proxima linha sem alterar seu tamanho
+    - wrap-reverse
+
+    justify-content:
+    - flex-start -> Alinha o conteúdo no começo
+    - flex-end -> Alinha o conteúdo no lado direito
+    - space-between -> Distribui o conteúdo em toda área com espaçamentos iguais porem com as cantos coladas no começo e fim
+    - space-around -> Distribui o conteúdo em toda área com espaçamentos iguais
+
+    align-items:
+    - stretch      -> estica o conteúdo até o final do tamanho do conteiner mãe
+    - center       -> centraliza o conteúdo em referencia ao conteiner mãe (bom para tirar altura e largura do conteiner mãe)
+    - flex-start
+    - flex-end
+    - baseline
+
+    */
+
+.item {
+    background: #fff;
+    border: 1px solid rgb(201, 3, 3);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.item2 {
+    background: #fff;
+    border: 1px solid rgb(9, 211, 76);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}

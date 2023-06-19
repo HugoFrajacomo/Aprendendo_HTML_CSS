@@ -1,0 +1,25 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: url(imagem/camera.png);
+}
+
+#caixa2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#377200,rgb(36, 180, 206),rgb(18, 6, 65)); /*Poderia definir antes do primeiro valor de cor o sentido do gradiente escrevendo ex: background: linear-gradient(to left, #377200,rgb(104, 255, 3),rgb(127, 255, 8));
+    Opçãos
+    
+    -to left, to right, to botton, to top
+    -80deg  -> Em angulo 
+    
+    Também poderia usar um outros formatos de gradiente. O w3c possue todas elas para verificar*/
+}
+
+#caixa h1 {
+    background: rgba(255, 255, 255, 0.8); /*Com o rgba podemos definir uma opacidade sendo o valor "0" totalmente transparente e a o valor 1 totalmente solido*/
+}
+
+#caixa2 h1 {
+    background: rgba(255, 255, 255, 0.8); /*Com o rgba podemos definir uma opacidade sendo o valor "0" totalmente transparente e a o valor 1 totalmente solido*/
+}

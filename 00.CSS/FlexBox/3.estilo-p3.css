@@ -1,0 +1,34 @@
+#conteudo {
+    background: #dcdcdc;
+    width: 80%;
+    display: flex;
+    /*flex-shrink: 1;*/
+}
+
+#conteudo2 {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+/*flex-shink cria uma proporção na hora de encolher os itens. Quando maior o número mais o item encolhe em relação aos outros*/
+
+.item {
+    background: #fff;
+    border: 1px solid gray;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    /*flex-shrink: 1;*/
+    flex-basis: auto; /*Tamanho inicial será definido pelo width e height do proprio item ou podemos definir um valor fixo nele ao qual será mantido para todos*/
+}
+
+.item2 {
+    background: #fff;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    flex-grow: 1;
+    /*flex-shrink: 3;*/
+}

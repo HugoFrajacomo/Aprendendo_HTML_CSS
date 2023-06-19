@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Posicionamentos (static, relative, absolute e fixed)</title> <!--OBserve o "h1" e o "p" lá mudaremos entre as opções-->
+        <meta charset="utf-8">
+
+        <Style type="text/css">
+            body {
+                background: #007fc7;
+            }
+            #conteiner {
+                background: #fff;
+                width: 800px;
+                margin: 10px auto; /* Margem superior de 10px e laterais automáticas (centralizar conteiner)*/
+                padding: 10px;
+                position: relative; /* Desta forma a posição do conteiner não está estática*/
+            }
+            h1 {
+                position: static;
+
+            }
+            p {
+                position: static;
+                width: 300px;
+            }
+            .absolute {
+                border: 1px solid red;
+                background: #f2f2f2;
+                position: absolute; 
+                /* Desta forma o parágrafo não está mais relacionado a posicao dos outros elementos
+                A posição absoluta é referente ao conteiner que está o nosso elemento porém a posição do conteiner não deve ser estática, se não será baseado no "body"*/
+                top: 80px;
+                right: 80px;
+                
+            }
+            .fixo {
+                border: 1px solid red;
+                background: #f2f2f2;
+                position: fixed; /*Desta forma quando rolamos a página para baixo o texto segue junto com a rolagem para baixo*/
+                top: 500px;
+                left: 490px;
+            }
+
+        </Style>
+    </head>
+
+    <body>
+        
+        <div id="conteiner">
+            <h1>Posicionamentos</h1>
+            <p>
+                P1 Suspendisse potenti. Aenean non fringilla purus. Nunc urna turpis, tempor ut ultricies vel, rhoncus a orci. Proin vel sagittis felis. In metus magna, volutpat et consectetur ut, facilisis at metus. Praesent mi ante, elementum eu magna eget, dictum fringilla eros. Curabitur suscipit sem et leo semper, ac porttitor quam dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in lectus ac magna dictum ultrices eget ac odio. Proin eu ante eu nunc laoreet semper quis sed neque. Proin luctus magna id porttitor suscipit. Curabitur lacinia leo id diam ultrices, sed iaculis velit auctor. Aenean sollicitudin nisi id pretium dictum. Sed consectetur pellentesque dolor, a eleifend turpis. Donec aliquet rutrum risus, et hendrerit lacus gravida ut. Proin urna nunc, dignissim non dictum nec, rutrum ut mi. 
+            </p>
+            <p class="absolute">
+                P2 Suspendisse potenti. Aenean non fringilla purus. Nunc urna turpis, tempor ut ultricies vel, rhoncus a orci. Proin vel sagittis felis. In metus magna, volutpat et consectetur ut, facilisis at metus. Praesent mi ante, elementum eu magna eget, dictum fringilla eros. Curabitur suscipit sem et leo semper, ac porttitor quam dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in lectus ac magna dictum ultrices eget ac odio. Proin eu ante eu nunc laoreet semper quis sed neque. Proin luctus magna id porttitor suscipit. Curabitur lacinia leo id diam ultrices, sed iaculis velit auctor. Aenean sollicitudin nisi id pretium dictum. Sed consectetur pellentesque dolor, a eleifend turpis. Donec aliquet rutrum risus, et hendrerit lacus gravida ut. Proin urna nunc, dignissim non dictum nec, rutrum ut mi. 
+            </p>
+            <p class="fixo">
+                P3 Suspendisse potenti. Aenean non fringilla purus. Nunc urna turpis, tempor ut ultricies vel, rhoncus a orci. Proin vel sagittis felis. In metus magna, volutpat et consectetur ut, facilisis at metus. Praesent mi ante, elementum eu magna eget, dictum fringilla eros. Curabitur suscipit sem et leo semper, ac porttitor quam dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas in lectus ac magna dictum ultrices eget ac odio. Proin eu ante eu nunc laoreet semper quis sed neque. Proin luctus magna id porttitor suscipit. Curabitur lacinia leo id diam ultrices, sed iaculis velit auctor. Aenean sollicitudin nisi id pretium dictum. Sed consectetur pellentesque dolor, a eleifend turpis. Donec aliquet rutrum risus, et hendrerit lacus gravida ut. Proin urna nunc, dignissim non dictum nec, rutrum ut mi. 
+            </p>
+            <p>
+                P4 Aliquam laoreet dui eget mi tincidunt sodales. Phasellus feugiat quis urna sit amet mattis. Nunc et mollis enim. Morbi eu posuere elit. Nam ac auctor neque, eu malesuada eros. Pellentesque lobortis mi id mi faucibus varius. Nullam eget erat ipsum. Integer facilisis arcu et odio tempus bibendum. Ut a est sit amet ligula sodales molestie non ut risus. Donec vel dolor scelerisque, tempus quam a, tempor nunc. Aliquam erat volutpat. Aliquam malesuada mi eget eros blandit luctus. Curabitur sit amet nunc a ex interdum pulvinar. Suspendisse sollicitudin elementum felis. Sed semper augue eros, in hendrerit dui hendrerit ultrices. Duis rhoncus sollicitudin fringilla. 
+            </p>
+            <p>
+                P5 Nullam convallis urna magna, sit amet viverra massa imperdiet sed. Integer pharetra velit purus, sed gravida felis faucibus id. Aliquam laoreet neque non blandit vulputate. Praesent id ante vitae nulla mollis blandit. Integer pharetra sollicitudin eros, ut tempus arcu semper in. Nunc sollicitudin, metus nec tincidunt iaculis, est diam pellentesque enim, nec consectetur ligula lorem eu arcu. Praesent ullamcorper turpis nisi, in lobortis urna placerat eget. Integer pharetra tristique diam eget fermentum. Fusce quis congue magna. Vivamus nisi dolor, imperdiet quis quam in, ultrices dictum augue. Fusce rutrum a arcu eleifend vulputate. 
+            </p>
+        </div>
+    </body>
+</html>

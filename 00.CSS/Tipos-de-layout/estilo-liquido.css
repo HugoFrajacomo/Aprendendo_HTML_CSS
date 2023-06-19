@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+#conteiner {
+    width: 85%;
+    margin: 0 auto;
+    background: #fff url(Arquivos/coluna.png) repeat-y left top;
+    min-width: 720px; /* Tamanho mínimo que o site irá diminuir. Utilizado para não perder a formatação */
+    max-width: 960px;
+}
+
+#marca {
+    width: 100%;
+    height: 200px;
+    background: #225992 url(Arquivos/cabecalho2.jpg) no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+
+#conteudo {
+    width: 74%;
+    float: right;
+    text-align: justify;
+}
+
+#navegacao {
+    width: 24%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background: #d1d1d1;*/
+}
+
+#principal {
+    width: 60%;
+    float: left;
+
+}
+#secundario {
+    width: 38%;
+    float: right;
+    background: #d1d1d1;
+
+}
+#secundario h1, #secundario h2, #secundario h3, #secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+/*
+#imagem {
+    width: 90%;
+    overflow: hidden;  esconde conteúdo cortando a parte que não aparece no espaço 
+}
+*/
+
+img.img-noticia {
+    width: 96%;
+    padding: 2%;
+    max-width: 600px;
+}

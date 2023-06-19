@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Estilizando formulário</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <h2>Estilizando formulário</h2>
+        <fomr>
+            <fieldset> <!-- Comando agrupa dados semelhantes -->
+                <legend>
+                    Detalhes de contato
+                </legend>
+
+                <div>
+                    <label for="nome">Nome:</label> 
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="email">email:</label> 
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="url">URL:</label> 
+                    <input type="text" name="url" id="url">
+                </div>
+                <!--Comando Label: Etiqueta 
+                    Comando input para definir a caixa de resposta
+                    Relacionando o id do imput com o label usando o comando "for" (recurso utilizado para acessibilidade)
+                -->
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    Comentários
+                </legend>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Lembrar
+                </legend>
+                <div>
+                    <label>
+                        <input type="radio" name="lembrar" id="Sim">
+                        Sim
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="lembrar" id="Não">
+                        Não
+                    </label>
+                </div>
+            </fieldset>
+        </fomr>
+    </body>
+</html>

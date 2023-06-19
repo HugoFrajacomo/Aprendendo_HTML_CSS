@@ -1,0 +1,199 @@
+<!DOCTYPE html> <!-- define o tipo de documento-->
+
+<html> <!--Estrutura básica do html.-->
+
+    <head> <!--head é um espaço dedicado a configurações do site-->
+
+        <title>Hugo Frajacomo</title>
+        <meta charset="utf-8">
+
+
+    </head>
+
+    <body> <!--body é onde se adiciona todo tipo de conteúdo do site-->
+
+        <h1>Sobre a empresa</h1>
+        Essa é a empresa <b>(nome da empresa)</b>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+
+        Função "br" quebra a linha <b>Teste<br> <!--Função br é utilizada para fazer quebra de linha-->
+        Essa é a empresa <b>(Nome da empresa)</b><br>
+        <p>Função "p" cria um paragrafo </p>
+        <p>Essa é a empresa <b>(Nome da empresa)</b></p>
+
+        <hr>
+
+        <h1>Sobre os funcionários</h1> <!-- h1, h2, h3, h4, h5 e h6 são utilizados para criar títulos-->
+        Essa é a empresa <b>(nome da empresa)</b> <!--Para utilizar negrito usando o "B"-->
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+
+        <hr> <!--a função hr cria uma linha de separação-->
+
+        <strong>Teste negrito com strong</strong> <br>
+        <b>teste negrito com b</b> <br>
+        <i>Teste em itálico com i</i><br>
+        <em>Teste em itálico com "em"</em> <br>
+        <u>Teste de underline com u</u> <br>
+        <strike>testes de plalavra cortada com strike </strike> <br>
+
+        <hr>
+
+        <h1>Lista não ordenada</h1>
+        <ul Type="circle">    <!--Posso alterar o tipo dos tópicos definindo "Type" circle, square ou disk). O comando ul serve para criar uma lista não ordenada-->
+            <li>Notebook</li>
+            <li>Roteador</li>
+        </ul>
+
+        <hr>
+
+        <h1>Perguntas</h1>
+
+        <ol Type="A"> <!--Ol é utilizado para criar uma lista ordenada (type poder ser "1" para números, "A" ou "a" para letras, "I" ou "i" para algarismos românos)-->
+            <li>Comida Favorita</li>
+            <li>Carro favorito</li>
+            <li>Série favorita</li>
+        </ol>
+
+        <hr>
+
+        <img src="imagens/logoferrari.png" width="200"> <!--O comando img src = serve para adicionar imagens ao site. 
+            Podendo ser o link na web ou então o local em que está no computador"
+            Ja quando colocamos o comando "width"/"height" definimos largura/altura da imagem em pixels -->
+
+        <hr>
+
+        <!--Como adicionar links-->
+
+        <h1>Links de acesso</h1>
+
+        <a href="Outras paginas/index.html">Início</a><br> <!-- a função <a href é usada para colocar links, seja do seus proprios htmls ou então de um site externo.-->
+        <a href="Outras paginas/contato.html">Contatos</a><br>
+
+        <hr>
+
+        <h1>Tabelas</h1>
+
+            <table border="2" width="90%" height="100"> <!-- posso configurar a tabela de acordo com o tamanho da borda, comprimento, largura-->
+                <tr><!-- tr são as linhas da tabela-->
+                    <th>Código</th><!--a função td ou th representa os dados da tabela(também colocamos as colunas conforme adicionamos mais em sequência na mesma linha)-->
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Fornecedor</th>
+                </tr>
+                <tr>
+                    <td>001</td><!--a função td representa os dados da tabela    "Table data"--> 
+                    <td>Notebook</td>
+                    <td>2.500,00</td>
+                    <td>C&A informática</td>
+                </tr>
+
+                <tr>
+                    <td>Teste</td><!--Se não colocar mais colunas e não definir outra regra a única caixa será da primeira coluna e as outras ficarão vazias--> 
+                </tr>
+
+                <tr>
+                    <td>Desconto</td> <!--Quando quiser deixar colulas em branco, adicione mais td sem colocar informações-->
+                    <td>Cupom 1 -R$ 10 reias</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>Desconto</td>
+                    <td colspan="3">Cupom 1 -R$ 20 reias</td> <!--Para juntar colunas use o comando colspan-->
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Desconto 2</td> <!--Comando rowspan junta duas linhas sempre referente a inferior com mesmo nome--> 
+                    <td colspan="3">Cupom 2 -R$ 20 reias</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Cupom 2 -R$ 20 reias</td> 
+                </tr>
+            </table>
+
+     <hr>
+
+        <!-- Montando formulários-->
+        <h1>Formulários</h1>
+        <h2>Login</h2>
+            <form>
+                    
+                Login:<br>
+                <input type="text" name="Login"><br> <!--Text permite o usuário digitar qualquer tecla e salva o arquivo como texto-->
+                    
+                Senha:<br>
+                <input type="password" name="Senha"><br> <!--Funciona igual ao Text porem o campo fica "secreto" não permitindo visualizar a senha digitada-->
+
+                <input type="button" value="Logar"> <!--"button" adiciona um botão e "value" adiciona um nome ao botão. Em type poderia adicionar "submit" para valiar a senha/usuário-->
+                
+            </form>
+
+            <h2>Cadastre-se</h2>
+            <form>
+                Login:<br>
+                <input type="text" name="Login"><br>
+    
+                Sexo: <br> <!--Função "Radio" é usada para demarcação de "verdadeiro / falso" pela seleção das bolinhas. Quando coloco todos com mesmo "name" ele só deixa selecionar um deles.-->
+                <input type="radio" name="Sexo" value="M"> Masculino<br> <!--Sem colocar o mesmo "name" poderia selecionar mais de uma alternativa-->
+                <input type="radio" name="Sexo" value="F"> Feminino<br><!--Ao colocar o value salvamos a escolha do usuário conforme as letras definidas "M,F,O"-->
+                <input type="radio" name="Sexo" value="O"> outros<br>
+    
+                Interesses<br> <!--Checkbox cria uma caixa de seleção. Para que o usuário escolha mais de uma opção -->
+                <input type="checkbox" name="interesses"> Futebol<br>
+                <input type="checkbox" name="interesses"> Handboll<br>
+                <input type="checkbox" name="interesses"> Voley<br>
+                <input type="checkbox" name="interesses"> Tenis<br>
+                <input type="checkbox" name="interesses"> Basquete<br>
+    
+                Estados <br> <!--Permite selecionar uma opção de uma lsita pre-definida. (o "value" é obrigatório para saber qual foi selecionado)-->
+                <select name="Estado">
+                    <option value="SP">SP</option>
+                    <option value="MG">MG</option>
+                    <option value="BH">BH</option>
+                    <option value="RS">RS</option>
+                    <option value="RJ">RJ</option>
+                    <option value="PA">PA</option>
+                </select><br><br>
+    
+                observações: <br> <!--Caixa de texto com área expancível-->
+                <textarea> </textarea><br>
+    
+                <input type="submit" value="Cadastrar">
+            </form>
+
+            <hr>
+
+            <h2>Caracteres espéciais</h2> <!--Acesse o google e procure por intities html para procurar o código do caractere-->
+            <!--https://www.w3schools.com/html/html_entities.asp site indicado-->
+
+            &lt;p&gt;<br>
+
+            home &nbsp;&nbsp;&nbsp;- quem somos &nbsp;&nbsp;&nbsp;- contato <!--Espaçamento feito com entidade "&nbsp;"-->
+
+            <hr>
+
+            
+
+            
+          
+          
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

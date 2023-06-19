@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Novas Tags de imput do HTML 5</title>
+        <link rel="stylesheet" href="estilo.css" type="text/css">
+        <!--OBS: Não funciona em todos os navegadores-->
+    </head>
+    <body>
+
+        <label for="nome">Nome</label>
+        <input type="text" nome="nome" id="nome" required autofocus> <!-- Required - Campo obrigatório / autofocus - deixa focado quando recarregar a pagina -->
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" nome="email" id="email" required>
+        <br><br>
+
+        <label for="numero">Numero</label>
+        <input type="number" nome="numero" id="numero" required min="1" max="20" step="5"> <!-- "numero - Só aceita números e min / max define intervalo de número válido" | step - quando aumenta na seta. -->
+        <br><br>
+
+        <label for="url">Link</label>
+        <input type="url" nome="url" placeholder="ex: http://www.google.com"> 
+        <br><br>
+
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" nome="pesquisa"> 
+        <br><br>
+
+        <label for="range">Range</label>
+        <input type="range" nome="range" min="1" max="3" value="2" > 
+        <br><br>
+
+        <label for="date">Range</label>
+        <input type="date" nome="date"> 
+        <br><br>
+
+        <label for="cor">Range</label>
+        <input type="color" nome="cor"> 
+        <br><br>
+
+        <input type="submit" value="Enviar">
+      
+
+    </body>
+</html>

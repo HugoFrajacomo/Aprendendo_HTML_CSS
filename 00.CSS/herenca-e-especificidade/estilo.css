@@ -1,0 +1,33 @@
+/*body {
+    color: red;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid blue;
+}
+Elementos que estão dentro do body herdaram a formatação do body
+
+o border não é herdado*/
+
+p {
+    color: blue;
+}
+
+P {
+    color: red;
+}
+
+/* Quando 2 seletores são iguais, sempre a ultima regra será aplicada */
+
+h2 {
+    background-color: blue !important;
+}
+h2{
+    background-color: red;
+}
+
+/* Neste cado eu defini "important" no seletor, logo ele prevalece sobre os demais */
+
+* {
+    color: blue;
+}
+
+/* Quanto mais específico o seletor, maior a prioridade dele.. acima o * aplica formatação de forma universal, em todos os elementos. Porem anteriormente foi definido que o "p" teria outra cor, logo a prioridade é dele por ser mais específico.

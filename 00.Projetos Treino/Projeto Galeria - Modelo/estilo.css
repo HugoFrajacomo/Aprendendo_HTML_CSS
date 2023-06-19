@@ -1,0 +1,41 @@
+.body {
+    background: url(Recursos/fundo.png) repeat #d2d2d2;
+    background-repeat: repeat;
+    background-color: #d2d2c1;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.bot {
+    border-radius: 10px;
+    background-color: #a1a16d;
+    box-shadow: #4b566a 1px 2px;
+}
+#principal {
+    width: 900px;
+}
+#navbar {
+    background: #c5c5b2;
+    padding: 18px;
+}
+#conteudo {
+    background: #e8e8e8;
+    padding: 10px;
+}
+A {
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+.centralizar {
+    text-align: center;
+}
+h1 {
+    color: #828271;
+    font-size: 1.2em;
+}
+.imgcamp {
+    border: 10px solid #c3c3ae;
+    box-shadow: #4b566a 3px 5px;
+
+}

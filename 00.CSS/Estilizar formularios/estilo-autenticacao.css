@@ -1,0 +1,54 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #643d87 url(Arquivos/fundo.jpg) no-repeat top center;
+}
+
+#container {
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255,0.3); /* O valor 0.3 representa a transparência*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40%;
+    width: 80%;
+    padding-left: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input.email {
+    background-image: url(Arquivos/icone-usuario.png);
+}
+
+input.senha {
+    background-image: url(Arquivos/icone-cadeado.png);
+}
+
+input.submit {
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    width: 90%;
+    height: 95%;
+
+    background: linear-gradient(to bottom, #faa600, #f68a00); /* Forma de criar gradiente de cor */
+}

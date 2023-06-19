@@ -1,0 +1,10 @@
+.texto {
+    color: rgb(182, 40, 40);
+    background: orange;
+}
+
+/* Aula herença e especificidade*/
+
+body {
+    color: red;
+}
